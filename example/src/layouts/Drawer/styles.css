@@ -1,0 +1,60 @@
+/**
+ * Drawer layout
+ */
+.layout-drawer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.layout-drawer--nav {
+  flex: 0 0 auto;
+}
+
+.layout-drawer--main {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: fit-content;
+}
+
+.layout-drawer--secondary {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: fit-content;
+}
+
+.layout-drawer--drawer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease all;
+  background: white;
+  box-shadow: -5px 0 8px 0 transparent;
+  top: 0;
+  bottom: 0;
+  left: 100vw;
+  width: 98vw;
+  z-index: 100;
+}
+.layout-drawer--drawer.expanded {
+  left: 2vw;
+  box-shadow: -5px 0 8px 0 #00000080;
+}
+
+.layout-drawer--toggle {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px 11px;
+  font-size: 16px;
+  z-index: 10000;
+  color: white;
+  cursor: pointer;
+}
+
+.layout-drawer--footer {
+  flex: 0 0 auto;
+}

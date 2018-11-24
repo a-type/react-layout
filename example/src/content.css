@@ -1,0 +1,29 @@
+/**
+ * Example app content areas
+ */
+
+.nav {
+  padding: 20px;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.mainContent {
+  padding: 20px;
+  background: var(--color-white);
+  color: var(--color-black);
+  height: 100%;
+}
+
+.secondaryContent {
+  padding: 20px;
+  background: var(--color-light);
+  color: var(--color-black);
+  height: 100%;
+}
+
+.footer {
+  padding: 20px;
+  background: var(--color-dark);
+  color: var(--color-white);
+}

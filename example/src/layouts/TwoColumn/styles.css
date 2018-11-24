@@ -1,0 +1,27 @@
+/**
+ * Two column layout using grid
+ */
+.layout-twoColumn {
+  display: grid;
+  grid-template-areas: 'nav nav' 'main secondary' 'footer footer';
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  gap: 0 10px;
+}
+
+.layout-twoColumn--nav {
+  grid-area: nav;
+}
+
+.layout-twoColumn--main {
+  grid-area: main;
+}
+
+.layout-twoColumn--secondary {
+  grid-area: secondary;
+}
+
+.layout-twoColumn--footer {
+  grid-area: footer;
+}

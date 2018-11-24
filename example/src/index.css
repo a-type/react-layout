@@ -1,5 +1,105 @@
+/**
+ * Basic resets & plumbing for demo page
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --color-dark: #665c84;
+  --color-primary: #ff7657;
+  --color-secondary: #ffba5a;
+  --color-light: #fbeed7;
+  --color-white: #fff;
+  --color-black: #222;
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  display: inline-block;
+  color: var(--color-white);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 0 6px #00000030;
+  background: #00000030;
+  margin: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  font-size: 16px;
+}
+a:first-child,
+button:first-child {
+  margin-left: 0;
+}
+a:last-child,
+button:last-child {
+  margin-right: 0;
+}
+a:hover,
+button:hover {
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 4px var(--color-secondary);
+}
+a:focus,
+button:focus {
+  box-shadow: 0 0 0 4px var(--color-secondary);
+}
+
+code {
+  background: var(--color-dark);
+  color: var(--color-light);
+  font-family: monospace;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin: auto 4px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#root {
+  height: 100%;
+}
+
+.switch {
+  height: 100%;
+}
+
+.menuButton--icon {
+  display: block;
+  border-left: 2px solid var(--color-black);
+  border-color: inherit;
+  height: 24px;
+  width: 12px;
+  margin-left: 12px;
+  position: relative;
+}
+.menuButton--icon::before {
+  content: '';
+  border-left: 2px solid var(--color-black);
+  border-color: inherit;
+  position: absolute;
+  left: -12px;
+  top: 0;
+  bottom: 0;
+}
+.menuButton--icon::after {
+  content: '';
+  border-left: 2px solid var(--color-black);
+  border-color: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }

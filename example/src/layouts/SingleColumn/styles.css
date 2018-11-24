@@ -1,0 +1,38 @@
+/**
+ * Single column layout
+ */
+.layout-singleColumn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layout-singleColumn--nav {
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+}
+
+.layout-singleColumn--main {
+  flex: 1 1 auto;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-height: 0;
+  height: fit-content;
+}
+
+.layout-singleColumn--secondary {
+  flex: 0 1 auto;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-height: 0;
+}
+
+.layout-singleColumn--footer {
+  flex: 0 0 auto;
+}
